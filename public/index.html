@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/w3.css" />
+    <title>Document</title>
+    <style>
+      table th,
+      table td {
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w3-bar w3-padding">
+      <span class="w3-bar-item" style="padding: 0; margin: 0; font-size: 23px"
+        ><b>Event Booking</b></span
+      >
+      <a href="index.html" class="w3-btn w3-bar-item">Home</a>
+      <a href="add-event.html" class="w3-btn w3-bar-item">Add Ticket</a>
+      <a href="my-profile.html" class="w3-btn w3-bar-item">My Profile</a>
+      <div class="w3-right">
+        <button
+          class="w3-bar-item w3-btn w3-round-xxlarge w3-blue"
+          onclick="connectWallet()"
+        >
+          Connect Wallet
+        </button>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="w3-auto">
+      <div class="w3-row-padding w3-stretch" id="events"></div>
+    </div>
+
+    <script src="./js/web3.min.js"></script>
+    <script src="./js/abi.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+      viewTransactions();
+    </script>
+  </body>
+</html>

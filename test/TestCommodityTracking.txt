@@ -1,0 +1,56 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "truffle/Assert.sol";
+import "truffle/DeployedAddresses.sol";
+import "../contracts/CommodityTracking.sol";
+
+contract TestCommodityTracking {
+    // Get an instance of the contract to test
+    CommodityTracking commodityTracking = CommodityTracking(DeployedAddresses.CommodityTracking());
+
+    // Test the createCommodity function
+    function testCreateCommodity() public {
+        // Create a new commodity
+        commodityTracking.createCommodity("Wheat", 100);
+
+        // Check that the new commodity was added to the list
+        uint expectedLength = 1;
+        uint actualLength = commodityTracking.commodities.length;
+        Assert.equal(actualLength, expectedLength, "Commodity was not added to the list");
+
+        // Check the values of the new commodity
+        CommodityTracking.Commodity memory newCommodity = commodityTracking.commodities[0];
+        string memory expectedName = "Wheat";
+        uint expectedQuantity = 100;
+        uint expectedProcess = uint(CommodityTracking.Process.ProjectStartUp);
+        Assert.equal(newCommodity.name, expectedName, "Name of new commodity is incorrect");
+        Assert.equal(newCommodity.quantity, expectedQuantity, "Quantity of new commodity is incorrect");
+        Assert.equal(newCommodity.currentProcess, expectedProcess, "Current process of new commodity is incorrect");
+    }
+
+    // Test the updateProcess function
+    function testUpdateProcess() public {
+        // Create a new commodity
+        commodityTracking.createCommodity("Rice", 200);
+
+        // Update the process of the new commodity
+        uint commodityIndex = 1; // Index of the new commodity in the list
+        uint processIndex = uint(CommodityTracking.Process.OceanShipment);
+        address stakeholder = address(this); // Use this contract's address for testing
+        commodityTracking.updateProcess(commodityIndex, processIndex, stakeholder);
+
+        // Check that the current process of the commodity was updated
+        uint expectedProcess = processIndex;
+        uint actualProcess = commodityTracking.commodities[commodityIndex - 1].currentProcess;
+        Assert.equal(actualProcess, expectedProcess, "Current process of commodity was not updated");
+
+        // Check that the stakeholder and timestamp were added to the commodity's process history
+        address expectedStakeholder = stakeholder;
+        address actualStakeholder = commodityTracking.commodities[commodityIndex - 1].stakeholders[processIndex];
+        Assert.equal(actualStakeholder, expectedStakeholder, "Stakeholder was not added to the commodity's process history");
+        uint expectedTimestamp = block.timestamp;
+        uint actualTimestamp = commodityTracking.commodities[commodityIndex - 1].timestamps[processIndex];
+        Assert.equal(actualTimestamp, expectedTimestamp, "Timestamp was not added to the commodity's process history");
+    }
+}

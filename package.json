@@ -1,0 +1,30 @@
+{
+  "name": "events-booking-system",
+  "version": "1.0.0",
+  "description": "Impact Plus and Polygon hackathon for trust",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TwigaDEVs/HackTrustHackathon.git"
+  },
+  "author": "Erick Ondiwa",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.3",
+    "chai": "^4.3.7",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0",
+    "solc": "^0.8.19",
+    "truffle": "^5.1.65"
+  },
+  "devDependencies": {
+    "ganache": "^7.8.0",
+    "hardhat": "^2.14.0",
+    "lite-server": "^2.6.1",
+    "nodemon": "^2.0.22"
+  }
+}

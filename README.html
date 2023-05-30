@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>readme</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="README_files/libs/clipboard/clipboard.min.js"></script>
+<script src="README_files/libs/quarto-html/quarto.js"></script>
+<script src="README_files/libs/quarto-html/popper.min.js"></script>
+<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="README_files/libs/quarto-html/anchor.min.js"></script>
+<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="README_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="README_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="polygon-hackathon" class="level1">
+<h1>Polygon Hackathon</h1>
+<section id="environment-setup" class="level2">
+<h2 class="anchored" data-anchor-id="environment-setup">Environment Setup;</h2>
+<pre><code>        *Solidity*
+        npm install -g solc
+        
+        *Truffle*
+        npm install -g truffle
+                truffle version
+                
+        *Ganache*
+        Download Package from https://www.trufflesuite.com/ganache</code></pre>
+</section>
+<section id="aid-transparency-project" class="level2">
+<h2 class="anchored" data-anchor-id="aid-transparency-project">Aid transparency project</h2>
+<p>Key Points;</p>
+<ul>
+<li>Donation</li>
+<li>Transportation</li>
+<li>Storage</li>
+<li>Distribution</li>
+</ul>
+</section>
+</section>
+<section id="usaid-program-award-details" class="level1">
+<h1>USAID Program Award details</h1>
+<pre class="mermaid"><code>graph LR;
+  A[Signed Award] --&gt; 1[Project Start-Up];
+  1 --&gt; A;
+  A --&gt; 2[Sales Orders];
+  2 --&gt; 3[Procurement];
+  3 --&gt; 4[Ocean Shipment];
+  4 --&gt; 5[Port Operations];
+  5 --&gt; 6[Transport];
+  6 --&gt; 7[Warehousing];
+  7 --&gt; 8[Distribution];
+  5 --- B[Internal Control and Quality Oversight];
+  6 --- B;
+  7 --- B;
+  8 --- B;
+  B --&gt; 9[Food Distribution Monitoring];
+  8 --&gt; 10[Close-Out];
+  10 --&gt; End[End];
+</code></pre>
+<section id="step-1-donor-actions" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-donor-actions">Step 1: Donor Actions</h2>
+<ol type="1">
+<li>Identify funding priorities and allocate funds for development assistance programs in Kenya.</li>
+<li>Develop funding guidelines and requirements for potential grantees.</li>
+<li>Release a Request for Application (RFA) to potential grantees.</li>
+<li>Review submitted applications and select grantees.</li>
+<li>Negotiate and finalize grant agreements with selected grantees.</li>
+<li>Disburse funds to grantees as specified in the grant agreement.</li>
+<li>Monitor and evaluate the grantee’s performance and progress toward program goals.</li>
+<li>Provide technical assistance and support to grantees as needed.</li>
+<li>Close out the grant, including final reporting and evaluation of the program’s impact.</li>
+</ol>
+<section id="donor-timeline-approximate" class="level3">
+<h3 class="anchored" data-anchor-id="donor-timeline-approximate">Donor Timeline (approximate)</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Approximate Days</th>
+<th>Stakeholders</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>30</td>
+<td>Donor</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>15</td>
+<td>Donor</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>30</td>
+<td>Donor</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>60</td>
+<td>Donor, Grantee</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>30</td>
+<td>Donor, Grantee</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>30</td>
+<td>Donor, Grantee</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Ongoing</td>
+<td>Donor, Grantee, Independent Evaluator</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Ongoing</td>
+<td>Donor, Grantee</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>30</td>
+<td>Donor, Grantee</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="step-2-award-requesting-entity-actions" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-award-requesting-entity-actions">Step 2: Award-Requesting Entity Actions</h2>
+<ol type="1">
+<li>Review the RFA and eligibility criteria to determine if the organization is qualified to apply.</li>
+<li>Develop a proposal that meets the funding guidelines and requirements.</li>
+<li>Submit the proposal to the donor by the specified deadline.</li>
+<li>Participate in negotiations with the donor to finalize the grant agreement.</li>
+<li>Implement the program according to the grant agreement and submit regular reports to the donor.</li>
+<li>Purchase products using the funds and distribute aid to beneficiaries.</li>
+<li>Monitor and evaluate program implementation and report progress to the donor.</li>
+<li>Close out the grant, including final reporting and evaluation of the program’s impact.</li>
+</ol>
+<section id="award-requesting-entity-timeline-approximate" class="level3">
+<h3 class="anchored" data-anchor-id="award-requesting-entity-timeline-approximate">Award-Requesting Entity Timeline (approximate)</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Approximate Days</th>
+<th>Stakeholders</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>15</td>
+<td>Award-Requesting Entity</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>30</td>
+<td>Award-Requesting Entity</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>30</td>
+<td>Award-Requesting Entity</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>30</td>
+<td>Award-Requesting Entity, Donor</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Ongoing</td>
+<td>Award-Requesting Entity, Donor</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Ongoing</td>
+<td>Award-Requesting Entity, Donor</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Ongoing</td>
+<td>Award-Requesting Entity, Donor</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>30</td>
+<td>Award-Requesting Entity, Donor</td>
+</tr>
+</tbody>
+</table>
+<p>Note that these timelines and stakeholders are approximate and may vary depending on the specific circumstances of each grant.</p>
+</section>
+</section>
+<section id="step-3-awarding-the-contract" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-awarding-the-contract">Step 3: Awarding the Contract</h2>
+<ol type="1">
+<li>Once the bids have been received, they are reviewed to ensure compliance with the RFP.</li>
+<li>The technical and financial proposals are evaluated and scored against the evaluation criteria outlined in the RFP.</li>
+<li>Based on the evaluation, a selection committee recommends the most responsive and responsible bidder for the contract award.</li>
+<li>Negotiations begin with the selected bidder to finalize the terms and conditions of the contract.</li>
+<li>Once the negotiations are complete, the contract is awarded to the selected bidder.</li>
+</ol>
+<section id="step-3-timeline-approximate" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-timeline-approximate">Step 3: Timeline (approximate)</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Approximate Days</th>
+<th>Stakeholders</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>10-20</td>
+<td>Procurement team</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>30-60</td>
+<td>Procurement team, Technical Experts</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>15-30</td>
+<td>Selection Committee</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>30-45</td>
+<td>Procurement team, Legal Team</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>5-10</td>
+<td>Procurement team, Selected Bidder</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="step-4-contract-management" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-contract-management">Step 4: Contract Management</h2>
+<ol type="1">
+<li>Establish a contract management team to oversee the implementation of the contract.</li>
+<li>Develop a contract management plan outlining the roles and responsibilities of the contract management team, communication protocols, and performance metrics.</li>
+<li>Monitor contract compliance and performance against the contract management plan.</li>
+<li>Conduct regular performance reviews and provide feedback to the contractor.</li>
+<li>Ensure that all required deliverables are submitted by the contractor on time and meet the quality standards specified in the contract.</li>
+<li>Manage any changes or modifications to the contract, including negotiating and executing change orders as necessary.</li>
+<li>Identify and manage any risks or issues that arise during contract implementation.</li>
+<li>Close out the contract, including final acceptance of deliverables and resolution of any outstanding issues.</li>
+</ol>
+<section id="step-4-timeline-approximate" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-timeline-approximate">Step 4 Timeline (approximate)</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Approximate Days</th>
+<th>Stakeholders</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>1-2</td>
+<td>Procurement team</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>10-20</td>
+<td>Contract management team</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Ongoing</td>
+<td>Contract management team</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Ongoing</td>
+<td>Contract management team</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Ongoing</td>
+<td>Contract management team</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>15-30</td>
+<td>Contract management team</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Ongoing</td>
+<td>Contract management team</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>10-20</td>
+<td>Contract management team</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="step-5-disbursement-and-fund-management" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-disbursement-and-fund-management">Step 5: Disbursement and Fund Management</h2>
+<ol type="1">
+<li>Once the contract is in place, funds are disbursed to the contractor according to the payment schedule outlined in the contract.</li>
+<li>The contract management team monitors the use of funds to ensure compliance with the contract and program requirements.</li>
+<li>The contractor submits financial reports and supporting documentation to the contract management team to account for the use of funds.</li>
+<li>The contract management team reconciles the financial reports against the payment schedule to ensure accurate and timely disbursement of funds.</li>
+<li>The contract management team tracks the status of funds and any outstanding commitments or obligations.</li>
+</ol>
+<section id="step-5-timeline-approximate" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-timeline-approximate">Step 5 Timeline (approximate)</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Approximate Days</th>
+<th>Stakeholders</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>As per contract</td>
+<td>Finance team, Contractor</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Ongoing</td>
+<td>Contract management team</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Monthly</td>
+<td>Finance team, Contractor</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Monthly</td>
+<td>Finance team, Contract management team</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Ongoing</td>
+<td>Finance team, Contract management team</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="step-6-procurement-and-distribution-of-products" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-procurement-and-distribution-of-products">Step 6: Procurement and Distribution of Products</h2>
+<ol type="1">
+<li>The contractor procures the products and services required by the program according to the procurement plan outlined in the contract.</li>
+<li>The products and services are delivered to the program-implementing partners in Kenya.</li>
+<li>The program implementing partners distribute the products and services to the intended beneficiaries, such as individuals or organizations in need.</li>
+</ol>
+<section id="step-6-timeline-approximate" class="level3">
+<h3 class="anchored" data-anchor-id="step-6-timeline-approximate">Step 6 Timeline (approximate)</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Approximate Days</th>
+<th>Stakeholders</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>As per contract</td>
+<td>Contractor, Procurement team</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>30-60</td>
+<td>Contractor, Logistics team, Partners</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Ongoing</td>
+<td>Partners</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="step-7-monitoring-and-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="step-7-monitoring-and-evaluation">Step 7: Monitoring and Evaluation</h2>
+<ol type="1">
+<li>The program implementing partners monitor the distribution of products and services to ensure that they reach the intended beneficiaries.</li>
+<li>The program implementing partners collect data on the use and impact of the products and services.</li>
+<li>The data is analyzed and used to evaluate the effectiveness of the program and inform future program design and implementation. ### Step 7 Timeline (approximate)</li>
+</ol>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Approximate Days</th>
+<th>Stakeholders</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Ongoing</td>
+<td>Implementing partners, USAID</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Ongoing</td>
+<td>Implementing partners, USAID</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>60-90</td>
+<td>Implementing partners, USAID</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="sample-use-cases" class="level1">
+<h1>Sample Use Cases</h1>
+<section id="donor-tracking" class="level2">
+<h2 class="anchored" data-anchor-id="donor-tracking">Donor Tracking</h2>
+<pre class="plantuml"><code>@startuml
+actor Donor
+actor Award Requesting Entity
+actor USAID
+actor Recipient
+participant Smart Contract
+participant Polygon
+
+Donor -&gt; Smart Contract: Create Token
+Smart Contract -&gt; Donor: Token ID
+Award Requesting Entity -&gt; Smart Contract: Create Token
+Smart Contract -&gt; Award Requesting Entity: Token ID
+USAID -&gt; Smart Contract: Create Token
+Smart Contract -&gt; USAID: Token ID
+Recipient -&gt; Smart Contract: Transfer Token
+Smart Contract -&gt; Recipient: Token ID
+Recipient -&gt; Polygon: Trade Token
+Polygon -&gt; Smart Contract: Polygon Tokens
+Smart Contract -&gt; Polygon: Transfer Polygon Tokens
+Smart Contract -&gt; Recipient: Payment Complete
+@enduml
+</code></pre>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
